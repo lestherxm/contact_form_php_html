@@ -25,7 +25,7 @@ function sendMail($subject, $body, $email, $name, $html = false){
     $phpmailer->Password = $_ENV['MAIL_PASS'];
     
     // Adding recipient
-    $phpmailer->setFrom('lestherxm@gmail.com', 'Lesther Xitumul Manuel');//quien envia
+    $phpmailer->setFrom($_ENV['MAIL_USER'], $_ENV['MAIL_NAME']); //quien envia
     $phpmailer->addAddress($email, $name);//quien recibe
 
     // Email's Content
