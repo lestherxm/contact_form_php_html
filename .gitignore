@@ -1,0 +1,4 @@
+# Ignore vendor folder
+vendor
+# Ignore environment variales for security reasons
+.env
